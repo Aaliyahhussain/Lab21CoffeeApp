@@ -14,7 +14,17 @@
 	
 		<button>Register here!</button>
 		
+	
+		
 	</p>
 	</form>
+	<form action = "/drink-form">
+		<button>add drink </button>
+	</form>
+
+	<form action = "/DrinksMenu">
+		<button>view menu </button>
+	</form>
+
 </body>
 </html>

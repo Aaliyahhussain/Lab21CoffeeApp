@@ -4,14 +4,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>User</title>
+<title>Confirmation</title>
 </head>
 <body>
-	<form action="/home">
-	<h1>Congratulations! You are now registered!</h1>
-		<p>Hello ${fName}</p>
+	<h1>Congratulations ${ user.firstname}!</h1>
 		
-		<a href = "/">Return to Homepage!</a>
-	</form>
+		<p>
+		You are now registered. Return <a href="/">home</a>.
+		</p>
+
 </body>
 </html>

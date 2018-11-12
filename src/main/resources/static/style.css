@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+h1 {
+	color: firebrick;
+}
+
+h1 img {
+	height: 1em;
+}

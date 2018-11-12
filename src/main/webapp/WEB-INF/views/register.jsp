@@ -10,25 +10,32 @@
 <p>Please fill out this form</p>
 	<form action="/user">
 		<p>
-			First Name:<input name = "fName" />
+			<label>First Name:</label><br /><input id="FirstName" name="FirstName" required minlength="2" maxlength="15"/>
 		</p>
 		<p>
-			Last Name:<input name = "lName" />
+			<label>Last Name:</label><br> <input name="LastName" pattern="[A-Z][a-z]*" />
 		</p>
 		<p>
-			Email:<input name = "email" />
+			<label>Email:</label><br> <input type="email" name="email" />
 		</p>
 		<p>
-			Phone Number:<input name="PhoneNumber" type="PhoneNumber"/>
+			<label>Age:</label><br><input type="number" name="Age" min="1" max="200" step="1"/>
 		</p>
 		<p>
-			Password:<input name = "password" type = "password" />
+			<label>Phone Number:</label><br><input type="PhoneNumber" name="PhoneNumber" pattern="^(\d{3})(\d{3})(\d{4})$"/>
 		</p>
 		<p>
-			<button>Register</button>
+			<label>Password:</label><br><input type="password" name="password" />
+		</p>
+		<p>
+			<button>Submit</button>
 		</p>
 
 
 	</form>
 </body>
 </html>
+
+
+		
+		
