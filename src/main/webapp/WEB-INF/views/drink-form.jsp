@@ -12,10 +12,10 @@
 </head>
 <body>
 	<main class="container">
-		<a href="/food">Back</a>
+		<a href="/Drink">Back</a>
 		<h1>
 			Add a Drink
-			<img src="/images/cherries.png" class="d-none d-md-inline-block" />
+			<img src="" class="d-none d-md-inline-block" />
 		</h1>
 		
 		<form action="/add-food" method="post">
@@ -30,6 +30,10 @@
 			<div class="form-group">
 			    <label for="description">Description</label>
 			    <input class="form-control" id="description" name="description" required minlength="3">
+			</div>
+			<div class="form-group">
+			    <label for="price">Price</label>
+			    <input class="form-control" id="price" name="price" required minlength="3">
 			</div>
 			<button type="submit" class="btn btn-primary">Submit</button>
 		</form>

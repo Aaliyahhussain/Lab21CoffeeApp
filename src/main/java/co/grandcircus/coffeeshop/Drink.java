@@ -5,14 +5,16 @@ public class Drink {
 	private String name;
 	private String category;
 	private String description;
+	private double price;
 
 	public Drink() {}
 
-	public Drink(String name, String category, String description) {
+	public Drink(String name, String category, String description, double price) {
 		super();
 		this.name = name;
 		this.category = category;
 		this.description = description;
+		this.price = price;
 	}
 
 	public String getName() {
@@ -38,10 +40,21 @@ public class Drink {
 	public void setDescription(String description) {
 		this.description = description;
 	}
+	
+
+	public double getPrice() {
+		return price;
+	}
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
 
 	@Override
 	public String toString() {
-		return "Drink [name=" + name + ", category=" + category +  "]";
+		return "Drink [name=" + name + ", category=" + category + ", description=" + description + ", price=" + price
+				+ "]";
 	}
-
+	
+	
 }

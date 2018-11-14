@@ -14,12 +14,12 @@ public class DrinksMenu {
 	private List<Drink> list = new ArrayList<>();
 	
 	public DrinksMenu() {
-		list.add(new Drink("Triple Chocolate Frappuccino", "Iced", "a blend of every chocolate known to man" ));
-		list.add(new Drink("Peppermint Mocha", "Iced", "shards of peppermint in a cup"));
-		list.add(new Drink("Mexican Chocolate Milk", "Iced", "Creamy chocolate milk made with pure Mexican cacao"));
-		list.add(new Drink("Spiced Cider", "Hot", "Christmas in a cup"));
-		list.add(new Drink("Chestnut Praline Latte", "Hot", "Stolen from Starbucks' Menu"));
-		list.add(new Drink("Pumpkin Spice", "Hot", "Pumpkin Pie's fraternal twin"));
+		list.add(new Drink("Triple Chocolate Frappuccino", "Iced", "a blend of every chocolate known to man", 4.75));
+		list.add(new Drink("Peppermint Mocha", "Iced", "shards of peppermint in a cup", 3.75));
+		list.add(new Drink("Mexican Chocolate Milk", "Iced", "Creamy chocolate milk made with pure Mexican cacao", 4.00));
+		list.add(new Drink("Spiced Cider", "Hot", "Christmas in a cup", 4.25));
+		list.add(new Drink("Chestnut Praline Latte", "Hot", "Stolen from Starbucks' Menu", 3.25));
+		list.add(new Drink("Pumpkin Spice", "Hot", "Pumpkin Pie's fraternal twin", 3.50));
 		
 	}
 	

@@ -1,32 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-​<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Cafe Menu</title>
-<link rel = "stylesheet" href = "/style.css" />
+<title>Admin</title>
 </head>
 <body>
-
-	<style>
-	table, td, th {
-	border: 1px solid #A9A9A9;
-	text-align: left;
-	}
-
-	table {
-	border-collapse: collapse;
-	width: 100%;
-	}
-
-	th, td {
-	padding: 15px;
-	}
-	</style>
-
-	<h1>Cafe Menu</h1>
+	<h2>Edit an Item:</h2>
+	
+	<h3>Cafe Menu</h3>
 	
 	<form>
 		<input name ="category" placeholder = "Category"/>
@@ -37,6 +20,7 @@
 		<tr>
 			<th>Beverages</th><th>Category</th><th>Description</th>
 		</tr>
+		
 		<c:forEach var = "drink" items = "${ drink }">
 			<tr>
 				<td>${ drink.name }</td>
@@ -47,7 +31,6 @@
 		</c:forEach>
 	</table>
 	
-	<a href="/drink-form">Add Drink</a>
+	<a href="/admin">Add Drink</a>
 </body>
 </html>
-

@@ -5,6 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Confirmation</title>
+<link rel = "stylesheet" href = "/style.css" />
+<link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<h1>Congratulations ${ user.firstname}!</h1>
