@@ -1,36 +1,36 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Admin</title>
+<title>Admin Page</title>
+<link rel="stylesheet" href="style.css">
+
+<script type="text/javascript">
+	function validate(){
+		var a = document.forms["myForm"]["password"].value;
+  	  	if (a != "123GC") {
+  	  		alert("Invalid password");
+  	      	return false;
+  	  	}
+	}
+</script>
+
 </head>
 <body>
-	<h2>Edit an Item:</h2>
-	
-	<h3>Cafe Menu</h3>
-	
-	<form>
-		<input name ="category" placeholder = "Category"/>
-		<button>Filter</button>
-	</form>
 
-	<table>
-		<tr>
-			<th>Beverages</th><th>Category</th><th>Description</th>
-		</tr>
+	<div style="text-align:center" class="container">
+		<h3>Hello</h3>
+		<h3>To continue please enter password:</h3>
 		
-		<c:forEach var = "drink" items = "${ drink }">
-			<tr>
-				<td>${ drink.name }</td>
-				<td>${ drink.category }</td>
-				<td>${ drink.description }</td>
-				<td>${ drink.price }</td>
-			</tr>
-		</c:forEach>
-	</table>
+		<form name="myForm" onsubmit="return validate()" action="/menu" method="post">
+  			Password: <input type="password" name="password"><br>
+  		<input type="submit" value="Submit">
+  		
+</form>
+	</div>
 	
-	<a href="/admin">Add Drink</a>
 </body>
 </html>

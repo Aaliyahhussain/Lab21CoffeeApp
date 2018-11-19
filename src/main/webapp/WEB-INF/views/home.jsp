@@ -1,17 +1,16 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-​<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Coffee Shop</title>
 <link rel = "stylesheet" href = "/style.css" />
 <link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+<meta charset="ISO-8859-1">
+<title>Home</title>
+</head>
 
-
-
-<style>
+	<style>
 ul {
     list-style-type: none;
     margin: 0;
@@ -44,36 +43,14 @@ li a:hover:not(.active) {
 <h1>Welcome to Aaliyah's Cafe!</h1>
 
 <ul>
-  <li><a class="/home" href="#home">Home</a></li>
+  <li><a href="/home" href="#home">Home</a></li>
+  <li><a href="/login">Login</a></li>
   <li><a href="/register">Register</a></li>
-  <li><a href="/drink">Menu</a></li>
-  <li><a href="/drink">Admin</a></li>
+  <li><a href="/menu">Menu</a></li>
+  <li><a href="/item">Admin</a></li>
+  
 </ul>
 
 </body>
 </html>
-
-
-<!-- </head>
-<body>
-	<form action="/register">
-	<h1>Welcome to Aaliyah's Cafe!</h1>
-	<p>
-	
-		<button>Register here!</button>
-		
-	
-		
-	</p>
-	</form>
-	<form action = "/drink-form">
-		<button>add drink </button>
-	</form>
-
-	<form action = "/drink">
-		<button>view menu </button>
-	</form>
-
-</body>
-</html -->
 
